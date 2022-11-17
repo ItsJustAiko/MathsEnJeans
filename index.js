@@ -1,5 +1,5 @@
 const dateTimer = Date.now(); // Date en milliseconds
-const aEncoder = "je mange des pâtes";
+const aEncoder = "eee";
 
 const alphabetAscii = [
   "a",
@@ -162,7 +162,7 @@ function average(number) {
   let sum = 0;
 
   for (let i = 0; i < numberOfChar; i++) {
-    sum += parseInt(number.toString()[i]);
+    sum += Math.pow(parseInt(number.toString()[i]), 2);
   }
 
   return sum / numberOfChar;
